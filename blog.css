@@ -1,0 +1,265 @@
+/*colors
+background - #FDFDFD
+logo - #EDA798 (dark)+ #E6A68D (light)
+text - #BFBFBF
+banner - #E7663C
+photogallery - #EDA798*/
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(fonts/HelveticaNeue.otf);
+  font-family: bebas;
+  src: url(fonts/bebas.TTF);
+   }
+
+html {
+  background: #FDFDFD;
+  min-height: 100%;
+  font-family: HelveticaNeue;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0 15px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.nav {
+  width: 100%;
+  max-width: 960px;
+  min-width: 430px;
+  margin: 0 auto 10px;
+  padding: 10px 0 10px;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  font-family: bebas;
+}
+
+.main {
+  width: 100%;
+  max-width: 960px;
+  min-width: 430px;
+  margin: auto;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.footer {
+  background: #E7663C;
+  color: #FDFDFD;
+  width: 100%;
+  max-width: 960px;
+  min-width: 430px;
+  margin: auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.nav-items {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+
+.nav li {
+  width: 90px;
+  height: 35px;
+  margin: 5px 0 0 5px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.nav h1 {
+  font-size: 36px;
+  color: #E7663C;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  color: #EDA798;
+}
+
+.logo_dark {
+  color:#E7663C;
+}
+
+.nav-items a {
+  font-size: 18px;
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-items a:hover {
+  color: #E7663C;
+}
+
+.banner {
+  width: 100%;
+  max-width: 960px;
+  min-width: 430px;
+  height: 65px;
+  color: #FDFDFD;
+  background-color: #E7663C;
+  font-family: bebas;
+  margin: 0px auto 0px;
+  padding: 15px 10px 10px 15px;
+  box-sizing: border-box;
+}
+
+.banner h2 {
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  min-width: 430px;
+  margin: auto;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.info {
+  width: 70%;
+  margin: auto;
+  float: left;
+}
+
+.left_picture img {
+  margin-top: 30px;
+}
+
+.left_picture {
+  position: relative;
+}
+
+.paper1 {
+  position: absolute;
+  left: -85px;
+}
+
+.right-sidebar {
+  width: 27%;
+  float: right;
+}
+
+.header-with-image {
+  background-image: url(images/line.png);
+  margin: 10px 0;
+}
+
+.right-sidebar h4 {
+  font-family: bebas;
+  color: #E7663C;
+  background: white none repeat scroll 0 0;
+  display: inline-block;
+  margin: 0;
+  padding: 2px 10px 2px 0;
+}
+
+.categories_list {
+  padding-left: 0px;
+}
+
+.categories_list a {
+  text-decoration: none;
+  color: black;
+}
+
+.categories_list li {
+  list-style-type: none;
+}
+
+.photos {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 260px;
+  height: 120px;
+  justify-content: space-between;
+}
+
+.square {
+  width: 55px;
+  height: 55px;
+  margin: 0px 5px 10px 0px;
+  background-color: #E6A68D;
+  border: 1px solid red;
+}
+
+.post {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.post_date {
+  flex: 1 1 100px;
+}
+
+.post_text {
+  margin: 0 0 30px 30px;
+  flex: 1 1 500px;
+}
+
+.main_img {
+  width: 100%;
+  height: auto;
+}
+
+.article_separator {
+  background-image: url(images/line.png);
+  padding: 12px;
+}
+
+.heading {
+  font-family: bebas;
+  font-size: 16px;
+  color: #E7663C;
+}
+
+.data {
+  color: #BFBFBF;
+}
+
+.post_text p:first-child {
+  font-family: bebas;
+  color: #E7663C;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.additional_info {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.about_jetro, .twitter_widget, .contact_us {
+  margin: 0 0 30px 30px;
+  flex: 1 1 300px;
+}
+
+.additional_info h4 {
+  color: #FDFDFD;
+  font-size: 18px;
+  font-family: bebas;
+}
